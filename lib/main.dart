@@ -15,15 +15,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      localizationsDelegates: const [
-        GlobalCupertinoLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      supportedLocales: const [
-        Locale("he", ""),
-      ],
-      locale: const Locale("he", ""),
       title: 'יום השואה הבין לאומי איש שלום',
       theme: ThemeData.dark().copyWith(
           primaryColor: const Color(0xffd8aa2f),
