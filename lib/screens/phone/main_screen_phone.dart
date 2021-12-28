@@ -7,11 +7,12 @@ class MainScreenPhone extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Stack(
-        children: const [
+        children: [
           Align(
             alignment: Alignment.center,
             child: Text(
               "יום השואה הבינלאומי - איש שלום",
+              style: Theme.of(context).textTheme.headline3,
             ),
           )
         ],
