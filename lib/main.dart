@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:holocaust_ish_shalom/screens/phone/main_screen_phone.dart';
 import 'package:holocaust_ish_shalom/widgets/switcher.dart';
@@ -14,6 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: const [
+        GlobalCupertinoLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale("he", "IL"),
+      ],
+      locale: const Locale("he", "IL"),
       title: 'Holocaust Ish Shalom',
       theme: ThemeData.dark().copyWith(
           textTheme: TextTheme(
