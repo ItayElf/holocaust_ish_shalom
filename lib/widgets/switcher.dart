@@ -12,9 +12,11 @@ class Switcher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) =>
-          constraints.maxHeight > constraints.maxWidth ? phone : pc,
+    return SafeArea(
+      child: LayoutBuilder(
+        builder: (context, constraints) =>
+            constraints.maxHeight > constraints.maxWidth ? phone : pc,
+      ),
     );
   }
 }
