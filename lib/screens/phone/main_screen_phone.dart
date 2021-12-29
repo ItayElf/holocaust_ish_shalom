@@ -5,6 +5,7 @@ class MainScreenPhone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final int candles = MediaQuery.of(context).size.width ~/ 30;
     return Material(
       child: Stack(
         children: [
@@ -13,6 +14,10 @@ class MainScreenPhone extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                Image.asset(
+                  "assets/yellow_badge.png",
+                  width: 100,
+                ),
                 Text(
                   "יום השואה הבינלאומי\n איש שלום",
                   textAlign: TextAlign.center,
@@ -48,7 +53,20 @@ class MainScreenPhone extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Positioned(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: List.generate(
+                candles,
+                (i) => Image.asset(
+                  "candle.gif",
+                  height: MediaQuery.of(context).size.height / 6.4,
+                ),
+              ),
+            ),
+            bottom: 0,
+          ),
         ],
       ),
     );
