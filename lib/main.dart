@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:holocaust_ish_shalom/screens/pc/main_screen_pc.dart';
 import 'package:holocaust_ish_shalom/screens/phone/main_screen_phone.dart';
 import 'package:holocaust_ish_shalom/utils.dart';
+import 'package:holocaust_ish_shalom/widgets/router_helper.dart';
 import 'package:holocaust_ish_shalom/widgets/switcher.dart';
 
 void main() {
@@ -88,10 +89,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Switcher(
-        phone: MainScreenPhone(),
-        pc: MainScreenPc(),
-      ),
+      initialRoute: RouterHelper.start,
+      onGenerateRoute: RouterHelper.generateRoute,
     );
   }
 }
