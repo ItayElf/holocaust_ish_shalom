@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:holocaust_ish_shalom/utils.dart';
 
-class MainScreenPhone extends StatelessWidget {
-  const MainScreenPhone({Key? key}) : super(key: key);
+class MainScreenPc extends StatelessWidget {
+  const MainScreenPc({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,17 +18,17 @@ class MainScreenPhone extends StatelessWidget {
                 children: [
                   Image.asset(
                     "assets/yellow_badge.png",
-                    width: convert(100),
+                    width: convert(200),
                   ),
                   Text(
                     "יום השואה הבינלאומי",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.headline1,
                   ),
                   Text(
                     "איש שלום",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.headline2,
                   ),
                   SizedBox(
                     height: convert(25),
@@ -41,7 +41,7 @@ class MainScreenPhone extends StatelessWidget {
                           onPressed: () {},
                           child: Text(
                             "הדלקת נר עם שם",
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headline2,
                             textAlign: TextAlign.center,
                           ),
                           style: ElevatedButton.styleFrom(
@@ -55,7 +55,7 @@ class MainScreenPhone extends StatelessWidget {
                           onPressed: () {},
                           child: Text(
                             "הדלקת נר כללי",
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headline2,
                             textAlign: TextAlign.center,
                           ),
                           style: ElevatedButton.styleFrom(
@@ -69,7 +69,7 @@ class MainScreenPhone extends StatelessWidget {
                           onPressed: () {},
                           child: Text(
                             "צפייה בנרות שהודלקו",
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headline2,
                             textAlign: TextAlign.center,
                           ),
                           style: ElevatedButton.styleFrom(
