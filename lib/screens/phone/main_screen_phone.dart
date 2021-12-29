@@ -21,36 +21,62 @@ class MainScreenPhone extends StatelessWidget {
                     width: convert(100),
                   ),
                   Text(
-                    "יום השואה הבינלאומי\n איש שלום",
+                    "יום השואה הבינלאומי",
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.headline3,
+                  ),
+                  Text(
+                    "איש שלום",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline3,
                   ),
                   const SizedBox(
                     height: 25,
                   ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "הדלקת נר עם שם",
-                      style: Theme.of(context).textTheme.headline4,
-                      textAlign: TextAlign.center,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: Theme.of(context).primaryColor,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 25,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "הדלקת נר כללי",
-                      style: Theme.of(context).textTheme.headline4,
-                      textAlign: TextAlign.center,
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: Theme.of(context).primaryColor,
+                  IntrinsicWidth(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "הדלקת נר עם שם",
+                            style: Theme.of(context).textTheme.headline4,
+                            textAlign: TextAlign.center,
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 25,
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "הדלקת נר כללי",
+                            style: Theme.of(context).textTheme.headline4,
+                            textAlign: TextAlign.center,
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 25,
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "צפייה בנרות שהודלקו",
+                            style: Theme.of(context).textTheme.headline4,
+                            textAlign: TextAlign.center,
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
