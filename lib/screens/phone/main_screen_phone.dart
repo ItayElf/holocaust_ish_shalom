@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:holocaust_ish_shalom/utils.dart';
 
 class MainScreenPhone extends StatelessWidget {
   const MainScreenPhone({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class MainScreenPhone extends StatelessWidget {
               children: [
                 Image.asset(
                   "assets/yellow_badge.png",
-                  width: 100,
+                  width: convert(100),
                 ),
                 Text(
                   "יום השואה הבינלאומי\n איש שלום",

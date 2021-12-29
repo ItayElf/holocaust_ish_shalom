@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:holocaust_ish_shalom/screens/phone/main_screen_phone.dart';
+import 'package:holocaust_ish_shalom/utils.dart';
 import 'package:holocaust_ish_shalom/widgets/switcher.dart';
 
 void main() {
@@ -20,70 +21,67 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         textTheme: TextTheme(
           headline1: GoogleFonts.bellefair(
-            fontSize: 97,
+            fontSize: convert(97),
             fontWeight: FontWeight.w300,
-            // letterSpacing: -1.5,
             color: Colors.white,
           ),
           headline2: GoogleFonts.bellefair(
-            fontSize: 61,
+            fontSize: convert(61),
             fontWeight: FontWeight.w300,
-            // letterSpacing: -0.5,
             color: Colors.white,
           ),
           headline3: GoogleFonts.bellefair(
-            fontSize: 48,
+            fontSize: convert(48),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           headline4: GoogleFonts.bellefair(
-            fontSize: 34,
+            fontSize: convert(34),
             fontWeight: FontWeight.w400,
-            // letterSpacing: 0.25,
             color: Colors.white,
           ),
           headline5: GoogleFonts.bellefair(
-            fontSize: 24,
+            fontSize: convert(24),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           headline6: GoogleFonts.bellefair(
-            fontSize: 20,
+            fontSize: convert(20),
             fontWeight: FontWeight.w500,
             color: Colors.white,
           ),
           subtitle1: GoogleFonts.bellefair(
-            fontSize: 16,
+            fontSize: convert(16),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           subtitle2: GoogleFonts.bellefair(
-            fontSize: 14,
+            fontSize: convert(14),
             fontWeight: FontWeight.w500,
             color: Colors.white,
           ),
           bodyText1: GoogleFonts.bellefair(
-            fontSize: 16,
+            fontSize: convert(16),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           bodyText2: GoogleFonts.bellefair(
-            fontSize: 14,
+            fontSize: convert(14),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           button: GoogleFonts.bellefair(
-            fontSize: 14,
+            fontSize: convert(14),
             fontWeight: FontWeight.w500,
             color: Colors.white,
           ),
           caption: GoogleFonts.bellefair(
-            fontSize: 12,
+            fontSize: convert(12),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
           overline: GoogleFonts.bellefair(
-            fontSize: 10,
+            fontSize: convert(10),
             fontWeight: FontWeight.w400,
             color: Colors.white,
           ),
