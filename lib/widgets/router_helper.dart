@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:holocaust_ish_shalom/screens/pc/light_candle_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/main_screen_pc.dart';
 import 'package:holocaust_ish_shalom/screens/phone/light_candle_phone.dart';
 import 'package:holocaust_ish_shalom/screens/phone/main_screen_phone.dart';
@@ -19,7 +20,10 @@ class RouterHelper {
         );
       case "/light":
         return CustomPageRoute(
-          builder: (_) => Switcher(phone: LightCandlePhone(), pc: Container()),
+          builder: (_) => Switcher(
+            phone: LightCandlePhone(),
+            pc: LightCandlePc(),
+          ),
           settings: settings,
         );
       default:
