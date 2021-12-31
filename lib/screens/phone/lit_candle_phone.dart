@@ -21,7 +21,7 @@ class LitCandlePhone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      initialData: null,
+      initialData: Person(""),
       future: PersonOrm.getPerson(name),
       builder: (contest, snapshot) {
         if (snapshot.data == null) {
@@ -35,11 +35,20 @@ class LitCandlePhone extends StatelessWidget {
                     width: convert(100),
                   ),
                   Text(
-                    "קראה שגיאה",
+                    "קרתה שגיאה",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline3,
                   ),
                 ],
+              ),
+            ),
+          );
+        }
+        if ((snapshot.data as Person).name.isEmpty) {
+          return Material(
+            child: Center(
+              child: CircularProgressIndicator(
+                color: Theme.of(context).primaryColor,
               ),
             ),
           );
