@@ -38,7 +38,9 @@ class MainScreenPc extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushNamed("/light");
+                          },
                           child: Text(
                             "הדלקת נר עם שם",
                             style: Theme.of(context).textTheme.headline2,

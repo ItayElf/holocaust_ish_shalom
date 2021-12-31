@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
       title: 'יום השואה הבין לאומי איש שלום',
       theme: ThemeData.dark().copyWith(
         primaryColor: const Color(0xffd8aa2f),
+        primaryColorLight: const Color(0xffede2c2),
+        primaryColorDark: const Color(0xff8a6606),
         visualDensity: VisualDensity.adaptivePlatformDensity,
         textTheme: TextTheme(
           headline1: GoogleFonts.bellefair(
