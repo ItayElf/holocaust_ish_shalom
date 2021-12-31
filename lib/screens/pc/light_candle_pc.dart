@@ -29,6 +29,7 @@ class LightCandlePc extends StatelessWidget {
     } catch (e) {
       await PersonOrm.updateOrAddPerson(Person(name.text));
     }
+    Navigator.of(context).pushNamed("/lit", arguments: name.text);
   }
 
   @override
