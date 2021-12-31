@@ -12,4 +12,9 @@ class Person {
         "name": name,
         "times": times,
       };
+
+  @override
+  String toString() {
+    return "Person(name: $name, times: $times)";
+  }
 }

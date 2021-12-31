@@ -73,7 +73,9 @@ class LitCandlePhone extends StatelessWidget {
                   height: convert(25),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed("/all");
+                  },
                   child: Text(
                     "צפייה בכל הנרות שהודלקו",
                     style: Theme.of(context).textTheme.headline5,

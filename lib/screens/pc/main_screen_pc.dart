@@ -68,7 +68,9 @@ class MainScreenPc extends StatelessWidget {
                           height: convert(25),
                         ),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushNamed("/all");
+                          },
                           child: Text(
                             "צפייה בנרות שהודלקו",
                             style: Theme.of(context).textTheme.headline2,
