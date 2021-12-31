@@ -11,13 +11,6 @@ class LitCandlePhone extends StatelessWidget {
 
   final String name;
 
-  String getTimesString(Person p) {
-    if (p.times == 1) {
-      return "אתם הראשונים שהדליקו נר זה";
-    }
-    return "נר זה הודלק ${p.times} פעמים";
-  }
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -32,7 +25,7 @@ class LitCandlePhone extends StatelessWidget {
                 children: [
                   Image.asset(
                     "assets/yellow_badge.png",
-                    width: convert(100),
+                    width: convert(75),
                   ),
                   Text(
                     "קרתה שגיאה",
@@ -64,7 +57,7 @@ class LitCandlePhone extends StatelessWidget {
               children: [
                 Image.asset(
                   "assets/candle.gif",
-                  width: convert(100),
+                  width: convert(75),
                 ),
                 Text(
                   p.name,

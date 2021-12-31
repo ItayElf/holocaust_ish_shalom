@@ -11,13 +11,6 @@ class LitCandlePc extends StatelessWidget {
 
   final String name;
 
-  String getTimesString(Person p) {
-    if (p.times == 1) {
-      return "אתם הראשונים שהדליקו נר זה";
-    }
-    return "נר זה הודלק ${p.times} פעמים";
-  }
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
