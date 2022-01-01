@@ -21,6 +21,18 @@ class LightCandlePhone extends StatelessWidget {
         ),
       );
       return;
+    } else if (name.text == "נר כללי") {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            "כדי להדליק נר כללי יש לגשת לדף נר כללי",
+            style: Theme.of(context).textTheme.headline5,
+            textDirection: TextDirection.rtl,
+          ),
+          backgroundColor: Theme.of(context).primaryColor,
+        ),
+      );
+      return;
     }
     try {
       Person p = await PersonOrm.getPerson(name.text);

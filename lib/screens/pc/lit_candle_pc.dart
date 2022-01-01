@@ -47,9 +47,6 @@ class LitCandlePc extends StatelessWidget {
           );
         }
         Person p = snapshot.data as Person;
-        if (p.name == "~general~") {
-          p.name = "נר כללי";
-        }
         return Material(
           child: Center(
             child: Column(
