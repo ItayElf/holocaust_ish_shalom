@@ -37,7 +37,7 @@ class LightCandlePhone extends StatelessWidget {
     try {
       Person p = await PersonOrm.getPerson(name.text);
       p.times += 1;
-      PersonOrm.updateOrAddPerson(p);
+      await PersonOrm.updateOrAddPerson(p);
     } catch (e) {
       await PersonOrm.updateOrAddPerson(Person(name.text));
     }

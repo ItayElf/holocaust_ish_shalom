@@ -4,6 +4,7 @@ import 'package:holocaust_ish_shalom/screens/pc/light_candle_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/lit_candle_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/main_screen_pc.dart';
 import 'package:holocaust_ish_shalom/screens/phone/all_candles_phone.dart';
+import 'package:holocaust_ish_shalom/screens/phone/general_light_phone.dart';
 import 'package:holocaust_ish_shalom/screens/phone/light_candle_phone.dart';
 import 'package:holocaust_ish_shalom/screens/phone/lit_candle_phone.dart';
 import 'package:holocaust_ish_shalom/screens/phone/main_screen_phone.dart';
@@ -44,6 +45,14 @@ class RouterHelper {
           builder: (_) => const Switcher(
             phone: AllCandlesPhone(),
             pc: AllCandlesPc(),
+          ),
+          settings: settings,
+        );
+      case "/general":
+        return CustomPageRoute(
+          builder: (_) => const Switcher(
+            phone: GeneralLightPhone(),
+            pc: SizedBox(),
           ),
           settings: settings,
         );

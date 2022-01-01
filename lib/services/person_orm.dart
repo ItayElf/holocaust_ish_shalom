@@ -22,7 +22,7 @@ class PersonOrm {
     return Person.fromJson(data);
   }
 
-  static Future<void> updateOrAddPerson(Person person) async {
-    _people.doc(person.name).set(person.toJson());
+  static Future<void> updateOrAddPerson(Person person, [String? name]) async {
+    _people.doc(name ?? person.name).set(person.toJson());
   }
 }
