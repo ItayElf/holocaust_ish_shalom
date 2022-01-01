@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:holocaust_ish_shalom/screens/pc/all_candles_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/light_candle_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/lit_candle_pc.dart';
 import 'package:holocaust_ish_shalom/screens/pc/main_screen_pc.dart';
@@ -42,7 +43,7 @@ class RouterHelper {
         return CustomPageRoute(
           builder: (_) => const Switcher(
             phone: AllCandlesPhone(),
-            pc: SizedBox(),
+            pc: AllCandlesPc(),
           ),
           settings: settings,
         );
