@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'יום השואה הבין לאומי איש שלום',
+      title: 'יום השואה הבינלאומי איש שלום',
       theme: ThemeData.dark().copyWith(
         primaryColor: const Color(0xffd8aa2f),
         primaryColorLight: const Color(0xffede2c2),
