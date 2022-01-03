@@ -91,15 +91,27 @@ class MainScreenPhone extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: List.generate(
-                candles,
-                (i) => Image.asset(
-                  "assets/candle.gif",
-                  width: candleWidth.toDouble(),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "כל הזכויות שמורות לבית הספר איש שלום ולאיתי בן חיים",
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
-              ),
+                SizedBox(
+                  height: convert(5),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: List.generate(
+                    candles,
+                    (i) => Image.asset(
+                      "assets/candle.gif",
+                      width: candleWidth.toDouble(),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
